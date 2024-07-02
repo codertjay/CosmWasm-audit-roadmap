@@ -47,24 +47,23 @@ At this point, you already have at least basic knowledge of blockchain techs, sm
 - [CosmWasm for CTOs 0](https://medium.com/cosmwasm/cosmwasm-for-ctos-f1ffa19cccb8), [I: the architecture](https://medium.com/cosmwasm/cosmwasm-for-ctos-i-the-architecture-59a3e52d9b9c), [II: advanced usage](https://medium.com/cosmwasm/cosmwasm-for-ctos-ii-advanced-usage-ee04ce95d1d0), [IV: native integrations](https://medium.com/cosmwasm/cosmwasm-for-ctos-iv-native-integrations-713140bf75fc)
 
 
-:milky_way: As CosmWasm is a Cosmos SDK module that will run in Cosmos chains, you should first familiarize yourself with how Cosmos works and some core concepts. You should at least read the following Cosmos documentation:
-1. [Introduction section](https://docs.cosmos.network/v0.47/intro/overview). Includes high-level overview, application-specific blockchains, blockchain architecture, and main components of the Cosmos SDK.
-2. [Basics section](https://docs.cosmos.network/v0.47/basics/app-anatomy). Includes anatomy of a Cosmos SDK application, transaction lifecycle, query lifecycle, accounts, and gas and fees.
+:milky_way: As CosmWasm is a Cosmos SDK module that will run in Cosmos chains, you should familiarize yourself with how Cosmos works and some core concepts. You should at least read the following Cosmos documentation:
+1. [Introduction section](https://docs.cosmos.network/v0.50/learn/intro/overview). Includes high-level overview, application-specific blockchains, blockchain architecture, and main components of the Cosmos SDK.
+2. [Basics section](https://docs.cosmos.network/v0.50/learn/beginner/app-anatomy). Includes anatomy of a Cosmos SDK application, transaction lifecycle, query lifecycle, accounts, and gas and fees.
 
-:point_right: NOW is when we start diving into CosmWasm itself. I would say just reading the [CosmWasm Book](https://book.cosmwasm.com/) cover to cover is a good starting point to get all the concepts before trying to develop your own contracts. In addition, [this one resource](https://github.com/CosmWasm/cosmwasm/blob/main/SEMANTICS.md) has been helpful to me for quick references from time to time, some details are reflected on The Book but some others are not so clear to me there.
+:point_right: NOW is when we start diving into CosmWasm itself. I would say just reading the [CosmWasm Book](https://book.cosmwasm.com/) cover to cover is a good starting point to get all the concepts before trying to develop your contracts. In addition, [this one resource](https://github.com/CosmWasm/cosmwasm/blob/main/SEMANTICS.md) has been helpful to me for quick references from time to time, some details are reflected on The Book but some others are not so clear to me there.
 
-CosmWasm smart contract programming will be your next stop. You should be able to write easy CW smart contracts, [CW Template](https://github.com/CosmWasm/cw-template) is a nice resource to play around with a bit. You can find a list of resources below, some of the content will overlap so the idea is not to do all of them but just to give more options
-1. [CosmWasm zero to hero](https://github.com/Callum-A/cosmwasm-zero-to-hero)
-2. [CosmWasm Academy](https://academy.cosmwasm.com/)
+CosmWasm smart contract programming will be your next stop. You should be able to write easy CW smart contracts, [CW Template](https://github.com/CosmWasm/cw-template) is a nice resource to play around with a bit. You can find a list of resources below, some of the content will overlap so the idea is not to do all of them but but to give more options
+1. [CosmWasm Academy](https://academy.cosmwasm.com/) <-- best maintained one at the time of writing
+2. [CosmWasm zero to hero](https://github.com/Callum-A/cosmwasm-zero-to-hero)
 3. [Area 52](https://area-52.io/)
-4. [Terra academy: CosmWasm smart contracts I](https://academy.terra.money/courses/cosmwasm-smart-contracts-i)
 
 :heavy_plus_sign: [CosmWasm Plus](https://github.com/CosmWasm/cw-plus) is a set of publicly available base contracts of common implementations following the idea of [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts). Going over some of the main ones and understanding their architecture and behavior is an excellent way to start testing your Smart Contract analysis game, your main skill as a future auditor.
 - [CW20 fungible token](https://github.com/CosmWasm/cw-plus/blob/main/packages/cw20/README.md)
 - [CW721 non-fungible token](https://github.com/CosmWasm/cw-nfts/blob/main/packages/cw721/README.md)
 - [CW1 fixed multisig](https://github.com/CosmWasm/cw-plus/tree/main/contracts/cw3-fixed-multisig)
 
-:100: In addition, you should get familiar with Smart Contract testing as you will craft your own PoCs using these, check [Mastering CosmWasm Multi-Test](https://medium.com/obi-money/learn-cosmwasm-multi-test-easy-rust-smart-contract-apps-96818550ba3d) for a practical crash course on the topic. Further documentation on the most used libraries can be found at:
+:100: In addition, you should get familiar with Smart Contract testing as you will craft your PoCs using these, check [Mastering CosmWasm Multi-Test](https://medium.com/obi-money/learn-cosmwasm-multi-test-easy-rust-smart-contract-apps-96818550ba3d) for a practical crash course on the topic. Further documentation on the most used libraries can be found at:
 - [Module cosmwasm_std::testing](https://docs.rs/cosmwasm-std/latest/cosmwasm_std/testing/index.html)
 - [Crate cw_multi_test](https://docs.rs/cw-multi-test/latest/cw_multi_test/), there is also a [chapter in the CW Book](https://book.cosmwasm.com/basics/multitest-intro.html)
 
